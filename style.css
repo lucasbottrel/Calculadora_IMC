@@ -1,23 +1,28 @@
 h1{
     margin-left: 20px;
     text-align: center;
-    color:rgb(231, 106, 48);
+    color:rgb(48, 91, 231);
+    font-weight:bolder;
+    font-size: 70px;
 }
 
-p{
+p,span{
     display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .container{
     border: 2px solid black;
     box-shadow: 0px 5px 10px;
-    padding: 0 50px 0 50px;
-    height: 400px;
+    padding: 0px 50px 50px 50px;
+    height: 100%;
     width: 75%;
     border-radius: 20px;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     margin: auto;
+
 }
 
 .container-calculadora-peso, .container-calculadora-altura{
@@ -26,7 +31,7 @@ p{
 }
 
 .peso-slider, .altura-slider{
-    width: 10%;
+    width: 30%;
     height: 1px;
     outline: none;
     
@@ -50,7 +55,7 @@ input[type=range]::-webkit-slider-thumb {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: rgb(231, 106, 48);
+    background: rgb(48, 91, 231);
     margin-top: -4px;
 }
 
@@ -65,27 +70,31 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .input-number{
     height: 20px;
     width: 90px;
-    margin-left: 20px;
     font-size: 20px;
-    margin-top: 5px;
-    border: solid 1px rgb(231, 106, 48);
+    margin: 10px 20px 10px 20px;
+    border: solid 2px rgb(48, 91, 231);;
 }
 
 .btn-calcular{
     font-size: 15px;
     width: 30%;
-    background-color:rgb(231, 106, 48);
+    font-weight: bold;
+    background-color:rgb(48, 91, 231);
     cursor: pointer;
-    border: none;
+    border: 100px;
     padding: 10px;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
+    
 }
 
 body{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgb(245, 180, 137);
     text-align: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, rgb(231, 106, 48) , rgb(233, 137, 92))
+    background-image: linear-gradient(to right, rgb(48, 91, 231) , rgb(81, 115, 228));
+    font-family: 'Open Sans', sans-serif;
 }
