@@ -35,6 +35,7 @@ p,span{
 .container-calculadora-peso, .container-calculadora-altura{
     margin-bottom: 16px;
     width: 100%;
+    
 }
 
 .peso-slider, .altura-slider{
