@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="./script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -17,21 +17,18 @@
         <form>
             <div class="container-calculadora-peso">
                 <p>Digite seu peso:</p>
-                <input class="input-number" type="number">
+                <input id="peso" class="input-number" type="number">
                 <span>kg</span>
-                <br>
-                <input class="peso-slider" type="range">
             </div>
-            <br><br>
             <div class="container-calculadora-altura">
                 <p>Digite sua altura:</p>
-                <input class="input-number" type="number">
+                <input id="altura" class="input-number" type="number">
                 <span>cm</span>
-                <br>
-                <input class="altura-slider" type="range">
             </div>
-            <br><br><br>
-            <input id="idCalcular" class="btn-calcular" type="button" value="CALCULAR">
+            <br>
+            <input onclick="calculateIMC()" id="botaocalcular" class="btn-calcular" type="button" value="CALCULAR">
+            <br>
+            <p id="resultado"></p>
         </form>
     </div>
 </body>

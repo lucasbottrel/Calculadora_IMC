@@ -12,6 +12,13 @@ p,span{
     font-weight: bold;
 }
 
+#resultado{
+    font-size: 30px;
+    background-color: white;
+    color: rgb(48, 91, 231);
+    padding: 10px;
+}
+
 .container{
     border: 2px solid black;
     box-shadow: 0px 5px 10px;
