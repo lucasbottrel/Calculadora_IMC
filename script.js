@@ -18,29 +18,20 @@ function calculateIMC() {
 
         let mensagem = ""
 
-        if (imc < 18.5){
-            mensagem = "Você está abaixo do peso!";
-            
-        } else if(imc < 25) {
-            mensagem = "Parabéns! Você está no peso Ideal!";
-
-        } else if (imc < 30){
-            mensagem = "Você está levemente acima do peso!";
-
-        } else if (imc < 35){
-            mensagem = "Cuidado! Obesidade grau I";
-
-        } else if (imc <40){
-            mensagem = "Cuidado! Obesidade grau II";
-
-        } else {
-            mensagem = "Cuidado! Obesidade grau III";
-        }
-
+        if (imc < 18.5) mensagem = "Você está abaixo do peso!";
+        else if(imc < 25) mensagem = "Parabéns! Você está no peso Ideal!";
+        else if (imc < 30) mensagem = "Você está levemente acima do peso!";
+        else if (imc < 35) mensagem = "Cuidado! Obesidade grau I";
+        else if (imc <40) mensagem = "Cuidado! Obesidade grau II";
+        else mensagem = "Cuidado! Obesidade grau III";
+        
         resultado.textContent = `Seu IMC é ${imc}. ${mensagem}`;
-
-    }
+    } 
 }
+
+console.log(botaoCalcular);
+
+botaoCalcular.addEventListener('click',calculateIMC);
 
 
 
